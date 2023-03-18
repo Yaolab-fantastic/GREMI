@@ -1,4 +1,4 @@
-# GMOINET
+# GRAMINET
 
 This repository contains the code of our paper . The data used in the paper can be obtained through the following links https://github.com/txWang/MOGONET. In this study, three omics data are combined into one file.
 
