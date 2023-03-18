@@ -42,7 +42,7 @@ def define_act_layer(act_type='Tanh'):
     return act_layer
 
 ################
-# subgraph by luo
+# subgraph
 ################
 def adj_to_PyG_edge_index(adj):
     coo_A = coo_matrix(adj)
