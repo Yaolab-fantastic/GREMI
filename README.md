@@ -12,7 +12,7 @@ This repository contains the code of our paper GRAMI-NET. The data used in the p
 
 # Usage
 
-You can get the result by running python modeltest.py.
+You can get the result by running python model-test.py.
 
 # Disclaimer
 
