@@ -16,7 +16,6 @@ from model_GAT import *
 # Env
 from utils import *
 
-# 载入组学数据和邻接矩阵,制作数据集，其中训练集245人，测试集106人
 data_tr = np.array(pd.read_csv('mogo-tr-brca.csv', header=None))[:, 1:].astype(float)
 tr_omic = torch.FloatTensor(data_tr[:, 0:2503]).requires_grad_()
 tr_labels = data_tr[:, 2503]
