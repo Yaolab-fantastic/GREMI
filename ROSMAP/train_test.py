@@ -143,14 +143,6 @@ for epoch in range(0, num_epochs):
     if test_acc_all[-1] > best_acc:
         best_acc = test_acc_all[-1]
         best_epoch = epoch + 1
-        best_model_wts = copy.deepcopy(network.state_dict())
-        # Saving the model
-        save_path = f'./model-rosmap.pth'
-        state = {
-            'net': best_model_wts,
-        }
-        torch.save(state, save_path)
-
 print('end')
 
 plt.figure(figsize=(30,15))
