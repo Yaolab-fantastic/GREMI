@@ -12,7 +12,7 @@ By capturing complementary information from multiple omics data, multi-omics int
 
 # Usage
 
-You can get the result by running python model-test.py.
+You can get the result by running model-test.py.
 
 # Disclaimer
 
