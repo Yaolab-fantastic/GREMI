@@ -11,7 +11,8 @@ By capturing complementary information from multiple omics data, multi-omics int
 - numpy
 
 # Usage
-
+The data used can be obtained through https://github.com/txWang/MOGONET.
+The data of three omics is concatenated into one file.
 You can get the result by running model-test.py.
 
 # Disclaimer
