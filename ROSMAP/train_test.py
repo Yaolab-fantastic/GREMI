@@ -8,11 +8,9 @@ import pandas as pd
 import random
 import pickle
 import copy
-import time
 import torch
 from model_GAT import *
 
-# Env
 from utils import *
 
 data_tr = np.array(pd.read_csv('mogo-tr.csv', header=None))[:, 1:].astype(float)
@@ -66,7 +64,7 @@ for epoch in range(0, num_epochs):
     # Print epoch
     print(' Epoch {}/{}'.format(epoch, num_epochs - 1))
     print("-" * 10)
-    # Set current loss value
+    # 
     network.train()
     current_loss = 0.0
     train_loss = 0.0
