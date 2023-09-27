@@ -8,12 +8,9 @@ import pandas as pd
 import random
 import pickle
 import copy
-import time
 import torch
 import sklearn.metrics
 from model_GAT import *
-
-# Env
 from utils import *
 
 data_tr = np.array(pd.read_csv('mogo-tr-brca.csv', header=None))[:, 1:].astype(float)
