@@ -12,8 +12,9 @@ By capturing complementary information from multiple omics data, multi-omics int
 
 # Usage
 The data used can be obtained through https://github.com/txWang/MOGONET.
-The data of three omics is concatenated into one file in our study.
-You can get the result by running model-test.py.
+We also provide the in-house processed data of extra three diseases.
+In our study, data from three omics were merged into one file. 
+You can get the classification result by running model-test.py.
 
 # Disclaimer
 
