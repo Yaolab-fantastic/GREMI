@@ -11,7 +11,7 @@ import copy
 import time
 import torch
 import sklearn.metrics
-from model_GAT import *
+from model_GREMI import *
 
 # Env
 from utils import *
