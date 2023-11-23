@@ -34,7 +34,7 @@ te_dataset = torch.utils.data.TensorDataset(te_omic, te_labels)
 te_data_loader = torch.utils.data.DataLoader(dataset=te_dataset, batch_size=32, shuffle=False)
 
 
-num_epochs = 500
+num_epochs = 750
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -139,7 +139,7 @@ for epoch in range(0, num_epochs):
         best_epoch = epoch + 1
         best_model_wts = copy.deepcopy(network.state_dict())
         # Saving the model
-        save_path = f'./model-rosmap1.pth'
+        save_path = f'./model-rosmap.pth'
         state = {
             'net': best_model_wts,
         }
