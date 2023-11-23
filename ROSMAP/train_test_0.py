@@ -10,7 +10,7 @@ import pickle
 import copy
 import time
 import torch
-from model_GAT import *
+from model_GREMI import *
 
 # Env
 from utils import *
