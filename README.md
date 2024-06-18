@@ -29,7 +29,7 @@ conda env create -f environment.yml
 conda activate greml-env
  ``` 
 
-##Data Preparation
+## Data Preparation
 The data used can be obtained through https://github.com/txWang/MOGONET. We also provide the in-house processed data of extra three diseases. In our study, data from three omics were merged into one file. 
 
 ## Usage
