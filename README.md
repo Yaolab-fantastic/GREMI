@@ -1,20 +1,42 @@
-# GREMI
+# GREMI: an Explainable Multi-omics Integration Framework for Enhanced Disease Prediction and Module Identification
 
-By capturing complementary information from multiple omics data, multi-omics integration has demonstrated promising performance in disease prediction. As the number of omics data increases, effectively representing the data and avoiding mutual interference becomes challenging due to the intricate relationships within and among omics data. Here, we propose a novel multi-omics integration framework that improves diagnostic prediction. Specifically, our framework involves constructing co-expression and co-methylation networks for each subject, followed by applying multi-level graph attention to incorporate biomolecule interaction information. The true-class-probability strategy is employed to evaluate omics-level confidence for classification, and the loss is designed using an adaptive mechanism to leverage both within- and across-omics information. Extensive experiments demonstrate that the proposed framework outperforms state-of-the-art methods on classification tasks, and indicate that the integration of three omics yields superior performance compared to employing only one or two data types. 
+By capturing complementary information from multiple omics data, multi-omics integration has demonstrated promising performance in disease prediction. As the number of omics data increases, effectively representing the data and avoiding mutual interference becomes challenging due to the intricate relationships within and among omics data. Here, we propose a novel multi-omics integration framework that improves diagnostic prediction.
 
-## Requirment
+## Overview
+
+![Framework](framework.png)
+
+Our framework involves:
+- Constructing co-expression and co-methylation networks for each subject
+- Applying multi-level graph attention to incorporate biomolecule interaction information
+- Utilizing a true-class-probability strategy to evaluate omics-level confidence for classification
+- Designing the loss using an adaptive mechanism to leverage both within- and across-omics information
+
+Extensive experiments demonstrate that the proposed framework outperforms state-of-the-art methods on classification tasks and indicates that the integration of three omics yields superior performance compared to employing only one or two data types.
+
+## Requirements
 
 - Python 3.6
-- Pytorch 1.10.2
-- pytorch geometric
-- sklearn
+- PyTorch 1.10.2
+- PyTorch Geometric
+- scikit-learn
 - numpy
+
+Create a conda environment using the provided `environment.yml` file:
+
+```sh
+conda env create -f environment.yml
+conda activate greml-env
+ ``` 
 
 # Usage
 The data used can be obtained through https://github.com/txWang/MOGONET.
 We also provide the in-house processed data of extra three diseases.
 In our study, data from three omics were merged into one file. 
-You can get the classification result by running model-test.py.
+You can get the classification result by running:
+ ```
+model-test.py.
+ ``` 
 
 # Disclaimer
 
@@ -27,3 +49,21 @@ This tool is developed in Yao Lab.
 The copyright holder for this project is Yao Lab.
 
 All rights reserved.
+
+#Ciatation
+Citation
+If you use this framework in your research, please cite our work:
+
+ ``` 
+@article {Liang2023.03.19.533326,
+    author = {Liang, Hong and Luo, Haoran and Sang, Zhiling and Jia, Miao and Jiang, Xiaohan and Wang, Zheng and Yao, Xiaohui and Cong, Shan},
+    title = {GREMI: an Explainable Multi-omics Integration Framework for Enhanced Disease Prediction and Module Identification},
+    elocation-id = {2023.03.19.533326},
+    year = {2023},
+    doi = {10.1101/2023.03.19.533326},
+    publisher = {Cold Spring Harbor Laboratory},
+    URL = {https://www.biorxiv.org/content/early/2023/11/15/2023.03.19.533326},
+    eprint = {https://www.biorxiv.org/content/early/2023/11/15/2023.03.19.533326.full.pdf},
+    journal = {bioRxiv}
+}
+ ``` 
