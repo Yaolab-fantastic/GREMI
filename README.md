@@ -29,14 +29,32 @@ conda env create -f environment.yml
 conda activate greml-env
  ``` 
 
-# Usage
-The data used can be obtained through https://github.com/txWang/MOGONET.
-We also provide the in-house processed data of extra three diseases.
-In our study, data from three omics were merged into one file. 
-You can get the classification result by running:
- ```
-model-test.py.
- ``` 
+##Data Preparation
+The data used can be obtained through https://github.com/txWang/MOGONET. We also provide the in-house processed data of extra three diseases. In our study, data from three omics were merged into one file. 
+
+## Usage
+# Setting up the environment
+1. Clone the repository and navigate to the project directory:
+```
+git clone https://github.com/Yaolab-fantastic/GREMI.git
+cd GREMI
+```
+2. Activate the conda environment:
+```
+conda activate greml-env
+```
+3.Ensure you are in the correct working directory:
+```
+cd /path/to/your/project
+```
+# Running the model
+To get the classification result, run the following command:
+```
+python model-test.py
+```
+# Results
+After running the model, you can expect to see the classification results which demonstrate the efficacy of our multi-omics integration approach.
+
 
 # Disclaimer
 
@@ -50,8 +68,7 @@ The copyright holder for this project is Yao Lab.
 
 All rights reserved.
 
-#Ciatation
-Citation
+## Citation
 If you use this framework in your research, please cite our work:
 
  ``` 
