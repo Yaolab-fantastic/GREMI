@@ -2,7 +2,7 @@
 
 By capturing complementary information from multiple omics data, multi-omics integration has demonstrated promising performance in disease prediction. As the number of omics data increases, effectively representing the data and avoiding mutual interference becomes challenging due to the intricate relationships within and among omics data. Here, we propose a novel multi-omics integration framework that improves diagnostic prediction.
 
-## Overview
+# Overview
 
 ![Framework](framework.png)
 
@@ -14,7 +14,7 @@ Our framework involves:
 
 Extensive experiments demonstrate that the proposed framework outperforms state-of-the-art methods on classification tasks and indicates that the integration of three omics yields superior performance compared to employing only one or two data types.
 
-## Requirements
+# Requirements
 
 - Python 3.6
 - PyTorch 1.10.2
@@ -29,11 +29,11 @@ conda env create -f environment.yml
 conda activate greml-env
  ``` 
 
-## Data Preparation
+# Data Preparation
 The data used can be obtained through https://github.com/txWang/MOGONET. We also provide the in-house processed data of extra three diseases. In our study, data from three omics were merged into one file. 
 
-## Usage
-# Setting up the environment
+# Usage
+## Setting up the environment
 1. Clone the repository and navigate to the project directory:
 ```
 git clone https://github.com/Yaolab-fantastic/GREMI.git
@@ -47,12 +47,12 @@ conda activate greml-env
 ```
 cd /path/to/your/project
 ```
-# Running the model
+## Running the model
 To get the classification result, run the following command:
 ```
 python model-test.py
 ```
-# Results
+## Results
 After running the model, you can expect to see the classification results which demonstrate the efficacy of our multi-omics integration approach.
 
 
@@ -68,7 +68,7 @@ The copyright holder for this project is Yao Lab.
 
 All rights reserved.
 
-## Citation
+# Citation
 If you use this framework in your research, please cite our work:
 
  ``` 
