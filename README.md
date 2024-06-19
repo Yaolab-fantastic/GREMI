@@ -34,6 +34,7 @@ The data used can be obtained through https://github.com/txWang/MOGONET. We also
 
 # Usage
 ## Setting up the environment
+
 1. Clone the repository and navigate to the project directory:
 ```
 git clone https://github.com/Yaolab-fantastic/GREMI.git
@@ -43,10 +44,11 @@ cd GREMI
 ```
 conda activate greml-env
 ```
-3.Ensure you are in the correct working directory:
+3. Ensure you are in the correct working directory:
 ```
 cd /path/to/your/project
 ```
+
 ## Running the model
 To get the classification result, run the following command:
 ```
