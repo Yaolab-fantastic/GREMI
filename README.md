@@ -57,10 +57,19 @@ python model-test.py
 ## Results
 After running the model, you can expect to see the classification results which demonstrate the efficacy of our multi-omics integration approach.
 
+## Explain
+
+We provide a concise demo implementation for subgraph explanation using the MUTAG dataset.
+The demo script (subgraph_demo.py) loads the MUTAG dataset, trains a graph neural network, and generates subgraph explanations. The output will include visualizations and metrics to help understand the model's decision-making process.
+To run the demo, follow these steps:
+```
+cd explain
+python subgraph_demo.py
+```
 
 # Disclaimer
 
-This tool is for research purpose and not approved for clinical use.
+This tool is for research purpose and not approved for clinical use. The demo showcases how to generate and interpret subgraph explanations within graph neural networks (GNNs).
 
 # Coypright
 
@@ -69,6 +78,9 @@ This tool is developed in Yao Lab.
 The copyright holder for this project is Yao Lab.
 
 All rights reserved.
+
+# Acknowledgment
+This work was inspired by Alicja Chaszczewicz, Kyle Swanson, and Mert Yuksekgonul as part of the Stanford CS224W course project.
 
 # Citation
 If you use this framework in your research, please cite our work:
