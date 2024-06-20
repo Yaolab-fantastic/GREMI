@@ -59,7 +59,7 @@ After running the model, you can expect to see the classification results which 
 
 ## Explain
 
-We provide a concise demo implementation for subgraph explanation using the MUTAG dataset.
+We provide a concise demo implementation for subgraph explanation using the MUTAG dataset. The demo showcases how to generate and interpret subgraph explanations within graph neural networks (GNNs).
 The demo script (subgraph_demo.py) loads the MUTAG dataset, trains a graph neural network, and generates subgraph explanations. The output will include visualizations and metrics to help understand the model's decision-making process.
 To run the demo, follow these steps:
 ```
@@ -69,7 +69,7 @@ python subgraph_demo.py
 
 # Disclaimer
 
-This tool is for research purpose and not approved for clinical use. The demo showcases how to generate and interpret subgraph explanations within graph neural networks (GNNs).
+This tool is for research purpose and not approved for clinical use. 
 
 # Coypright
 
