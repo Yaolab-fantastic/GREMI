@@ -34,7 +34,7 @@ te_dataset = torch.utils.data.TensorDataset(te_omic, te_labels)
 te_data_loader = torch.utils.data.DataLoader(dataset=te_dataset, batch_size=32, shuffle=False)
 
 
-num_epochs = 750
+num_epochs = 2000
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
