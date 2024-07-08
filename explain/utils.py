@@ -168,10 +168,3 @@ def data_to_PyG_data(x, edge_index, y):
 def PyG_edge_index_to_adj(edge_index):
     adj = torch_geometric.utils.to_dense_adj(edge_index=edge_index)
     return adj
-
-def data_write_csv(file_name, datas):#file_name为写入CSV文件的路径，datas为要写入数据列表
-  file_csv = codecs.open(file_name,'w+','utf-8')#追加写入方式
-  writer = csv.writer(file_csv, delimiter=' ', quotechar=' ', quoting=csv.QUOTE_MINIMAL)
-  for data in datas:
-    writer.writerow(data)
-  print("文件保存成功")
