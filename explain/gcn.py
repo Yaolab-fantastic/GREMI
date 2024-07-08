@@ -7,10 +7,7 @@ from torch_geometric.nn.conv import MessagePassing
 from torch_geometric.nn.models import GIN
 from torch import FloatTensor, LongTensor, Tensor
 class GIN_SubgraphX(torch.nn.Module):
-    """The GIN model from the SubgraphX paper.
 
-    Adapted from https://github.com/divelab/DIG/blob/dig/dig/xgraph/models/models.py
-    """
     def __init__(self,
                 in_channels: int,
                 hidden_channels: int,
