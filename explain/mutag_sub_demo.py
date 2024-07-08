@@ -29,7 +29,7 @@ from tqdm.notebook import trange, tqdm
 import torch_geometric
 #from singleomic_GAT import *
 from subgraph_demo import *
-from scipy.sparse import coo_matrix  # 转化成COO格式
+from scipy.sparse import coo_matrix  #
 from gcn import *
 # Env
 from utils import *
