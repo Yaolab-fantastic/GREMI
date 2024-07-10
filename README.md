@@ -11,6 +11,7 @@ Our framework involves:
 - Applying multi-level graph attention to incorporate biomolecule interaction information
 - Utilizing a true-class-probability strategy to evaluate omics-level confidence for classification
 - Designing the loss using an adaptive mechanism to leverage both within- and across-omics information
+- Utilizing Monte Carlo Tree Search for interpretable sample-level multi-omics disease outcome explanations
 
 Extensive experiments demonstrate that the proposed framework outperforms state-of-the-art methods on classification tasks and indicates that the integration of three omics yields superior performance compared to employing only one or two data types.
 
