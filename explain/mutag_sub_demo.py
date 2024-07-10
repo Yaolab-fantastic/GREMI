@@ -47,7 +47,7 @@ mutag_dataset.train_ds = mutag_dataset.ds[:int(0.8 * mutag_size)]
 mutag_dataset.valid_ds = mutag_dataset.ds[int(0.8 * mutag_size) : int(0.9 * mutag_size)]
 mutag_dataset.test_ds = mutag_dataset.ds[int(0.9 * mutag_size):]
 c = mutag_dataset.ds[:5]
-net = mutag_model = GIN_SubgraphX(
+net = mutag_model = GIN_Subgraph(
     in_channels=mutag_dataset.ds.num_features,
     hidden_channels=24,
     num_layers=3,
@@ -58,7 +58,6 @@ net = mutag_model = GIN_SubgraphX(
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 net.to(device)
 #
-# Create GNNExplainer model for MUTAG
 def visualize_subgraph_mutag(graph: nx.Graph,
                              node_set: Optional[Set[int]] = None,
                              edge_set: Optional[Set[int]] = None,
@@ -89,16 +88,16 @@ def visualize_subgraph_mutag(graph: nx.Graph,
     plt.show()
     plt.close()
 
-# Run SubgraphX and visualize the best subgraph for each graph
+# Run and visualize the best subgraph for each graph
 num_nodes = 4
-subgraphx = SubgraphX(model=mutag_model, min_nodes=num_nodes)
+subgraphx = Subgraph(model=mutag_model, min_nodes=num_nodes)
 
 for i, mutag_data in enumerate(mutag_dataset.ds[:1]):
     graph = to_networkx(mutag_data, node_attrs=['x'], edge_attrs=['edge_attr'], to_undirected=True)
-    subgraph = subgraphx.explain(x=mutag_data.x.to(device), edge_index=mutag_data.edge_index.to(device), max_nodes=num_nodes)
+    subgraph = subgraph.explain(x=mutag_data.x.to(device), edge_index=mutag_data.edge_index.to(device), max_nodes=num_nodes)
     visualize_subgraph_mutag(
         graph=graph,
         node_set=set(subgraph.coalition),
-        title=f'SubgraphX on graph {i}'
+        title=f'Identified subgraph on graph {i}'
     )
 
