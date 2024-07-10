@@ -170,7 +170,7 @@ class MCTS(object):
 
         return explanations
 
-class SubgraphX(object):
+class Subgraph(object):
     """An object which contains methods to explain a GNN's prediction on a graph in terms of subgraphs."""
 
     def __init__(self,
